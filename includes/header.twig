@@ -1,0 +1,31 @@
+<!-- HEADER INCLUDE !-->
+
+<div class="container">
+
+    <header class="theme-header  clearfix">
+        {{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+
+        {{widget('extendednavigation', 'navigation', {
+            'align': 'center'
+        })|raw}}
+
+        <div class="header-buttons">
+          {{widget('button', 'button', {
+            'text': 'Sign up',
+            'action': 'internal',
+            'url': '/signup',
+            'target': '_blank'
+          })|raw}}
+
+          <div class="login-button">
+            {{widget('button', 'button1', {
+              'text': 'Log in',
+              'action': 'internal',
+              'url': '/login',
+              'target': '_blank'
+            })|raw}}
+          </div>
+        </div>
+    </header>
+
+</div>

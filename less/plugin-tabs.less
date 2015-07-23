@@ -1,0 +1,290 @@
+.tabs input {display: none;}
+
+.tabs label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 25%;
+    line-height: 75px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    .transition(@duration:0.2s, @ease:ease-in-out);
+
+    @media @bp-tablet {
+      line-height: 45px
+    }
+}
+
+input:checked + tabs label{
+  border-bottom: 1px solid @brand-color;
+}
+
+.tabs label span {
+    display: block;
+    padding: 5px;
+
+    &:before {
+      width: 37px;
+      height: 32px;
+      margin-right: 12px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+}
+
+input:checked + label span span:after {
+      content: " ";
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      left: 50%;
+      bottom: -16px;
+      pointer-events: none;
+      background-color: white;
+      border-top: 1px solid @brand-color;
+      border-left: 1px solid @brand-color;
+
+      .transition(@duration:0.2s, @ease:ease-in-out);
+
+      -ms-transform: rotate(45deg) translate(-50%,0%); /* IE 9 */
+      -webkit-transform: rotate(45deg) translate(-50%,0%); /* Chrome, Safari, Opera */
+      transform: rotate(45deg) translate(-50%,0%);
+
+      @media @bp-tablet {
+        display: none;
+      }
+}
+
+span .ecommerce:before {
+  content:"";
+  background: image("/images/plugins/ecom.png") no-repeat;
+}
+
+span .blog:before {
+  content:"";
+  background: image("/images/plugins/blog.png") no-repeat;
+}
+
+span .menu:before {
+  content:"";
+  background: image("/images/plugins/menu.png") no-repeat;
+}
+
+span .ecommerce:hover:before,
+input:checked + label span span.ecommerce:before {
+  content:"";
+  background: image("/images/plugins/ecom-hover.png") no-repeat;
+}
+
+span .blog:hover::before,
+input:checked + label span span.blog:before {
+  content:"";
+  background: image("/images/plugins/blog-hover.png") no-repeat;
+}
+
+span .menu:hover::before,
+input:checked + label span span.menu:before {
+  content:"";
+  background: image("/images/plugins/menu-hover.png") no-repeat;
+}
+
+.tabs label span span {
+    color: @grey;
+    padding: 5px 20px;
+    background: transparent;
+    border-bottom: 1px solid @grey-borders;
+
+    .transition(@duration:0.2s, @ease:ease-in-out);
+}
+
+.tabs input:checked + label {cursor: default}
+
+
+.tabs ul {
+    list-style: none;
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
+.tabs ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    padding: 25px;
+    opacity: 0;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+.tabs > .content1:checked ~ ul > .content1,
+.tabs > .content2:checked ~ ul > .content2,
+.tabs > .content3:checked ~ ul > .content3,
+.tabs > .content4:checked ~ ul > .content4 {
+  /* ADD MORE AS NEEDED */
+    padding: 50px 0 0;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none
+}
+
+.content1,
+.content2,
+.content3 {
+  .flex-vert-center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  @media @bp-tablet {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  }
+}
+
+.plugin-copy {
+  text-align: left;
+  -webkit-flex: 0 1 40%;
+  -ms-flex: 0 1 40%;
+  flex: 0 1 40%;
+
+  margin-right: 40px;
+
+  @media @bp-tablet {
+    margin-right: 0;
+    text-align: center;
+    padding-bottom: 50px;
+
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+
+  @media @bp-mobile {
+    padding-bottom: 20px;
+  }
+}
+
+.plugin-image {
+  -webkit-flex: 0 1 60%;
+  -ms-flex: 0 1 60%;
+  flex: 0 1 60%;
+}
+
+.plugin-image img {
+  width: 100%;
+  height: auto;
+}
+
+/** COLORS **/
+
+/* RED */
+.color3 label:hover span span {
+  color: @brand-color;
+}
+.color3 input:checked + label span span {
+  color: @brand-color;
+  border-bottom: 1px solid @brand-color;
+}
+
+/** END COLORS **/
+
+/*** POSIITONS ***/
+.tcenter {
+  text-align: center;
+  margin-bottom: -21px;
+}
+
+.tcenter label {
+  width: 220px;
+  margin-left: -15px;
+
+  @media @bp-tablet {
+    margin-left: 0;
+  }
+}
+
+/* EFFECTS */
+.effect4 ul li {
+    -webkit-transform: translate(160px, 25px);
+    -moz-transform: translate(160px, 25px);
+    -o-transform: translate(160px, 25px);
+    transform: translate(160px, 25px)
+
+}
+
+/* RESPONSIVENESS 1 - NO ICONS */
+@media @bp-tablet {
+  .icon label {
+      font-size: 0;
+      width: auto}
+
+  .icon .fa {
+    vertical-align: middle;
+    margin: 0!important}
+}
+
+/* RESPONSIVENESS 2 - STACKING */
+@media @bp-tablet {
+  .stack label {
+            display: block;
+            width: 100%;
+            border: 0;
+            font-size: 17px;
+            padding-right: 0;
+            padding-left: 0}
+
+  .stack ul {
+            margin-top: 0;
+            margin-right: 0;
+            margin-left: 0}
+
+  .stack ul li {border-right-color: transparent}
+  .stack .cite {font-size: .7em}
+  .stack .fa {margin-right: 10px}
+}
+
+/* CITATIONS */
+
+.cite {
+  color: #fff;
+  display: inline-block;
+  font: italic normal 400 14px
+  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  float: right;
+  margin-top: 10px
+}
+
+.cite:before {
+  content: '_';
+  position: relative;
+  color: #fff;
+  top: -7px;
+  margin: 5px
+}
+
+// /* TEXT SELECTION */
+// .tabs ul li *::selection { background: #232323 }
+// .tabs ul li *::-moz-selection { background: #232323 }
+// /** END TYPOGRAPHY **/
+
+// ::-webkit-scrollbar { display: none }

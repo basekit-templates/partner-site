@@ -1,0 +1,28 @@
+{# Copyright 2014 BaseKit Platform Ltd #}
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- Header -->
+  {% include '/includes/header.twig' %}
+<!-- End Header -->
+
+<!-- Page Content -->
+<section class="template-content">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Main Widget Zone -->
+        {{zone('main')|raw}}
+
+    </div>
+    <!-- End Container -->
+
+    <!-- FOOTER -->
+    {% include 'includes/footer.twig' %}
+
+</section>
+<!-- End Page Content -->
+
+{% endblock %}

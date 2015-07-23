@@ -1,0 +1,722 @@
+// -------------------------------
+// Startups Website: LESS > Theme
+// -------------------------------
+
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. Global
+// 2. Header
+// 3. Feature
+// 4. Sections
+// 5. Signup / Login page
+// 6. Footer
+
+// -----------------------------
+// #1. Global
+// -----------------------------
+
+body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+// Container
+// ----------
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+// Widget Positioning
+.widget {
+    position: relative;
+}
+
+// Main Zone
+.bk-zone {
+    min-height: 40px;
+    margin-top: 100px;
+}
+
+
+
+// Forms
+// ----------
+
+.form {
+    background-color: @white;
+    padding: 40px 0 0;
+    box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.1);
+
+    .rounded(@radius: 2px);
+
+    h2 {
+        text-align: center;
+        color: @black;
+        padding: 0;
+    }
+
+    fieldset {
+        background-color: @white;
+        .rounded(@radius: 2px);
+        padding: 30px;
+
+        border: none;
+    }
+
+    label[for="email"],
+    label[for="password"] {
+        display: none;
+    }
+
+    input {
+        width: 300px;
+        padding: 15px ;
+        border: 1px solid darken(@grey-borders,15%);
+        display: block;
+
+        .rounded(@radius: 2px);
+
+        &:focus {
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+
+        @media @bp-mobile {
+              width: 225px;
+        }
+    }
+}
+
+
+// Error Messages
+
+input#persistent-login {
+    margin: 0px 0 20px;
+    width: 30px;
+    display: inline-block;
+}
+
+p.error.js-error.email.js-email.hidden,
+p.error.js-error.password.js-password.hidden,
+p.error.js-error.js-password.password.hidden,
+p.error.js-error.js-submission.submission.hidden {
+    width: 250px;
+    margin: 10px auto 20px;
+    overflow: hidden;
+
+    color: @brand-color;
+
+}
+
+
+
+
+// Typography
+// --------------------------------------
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: @brand-color;
+
+    padding-bottom: 22px;
+}
+
+h2 {
+    padding-bottom: 20px;
+    color: @brand-color;
+}
+
+h3 {
+    color: @grey-dark;
+    padding-bottom: 15px;
+}
+
+h4, .heading-4 {
+    font-size: 16px;
+    line-height: 32px;
+    color: @grey;
+}
+
+a {
+    color: @blue;
+
+    &:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+}
+
+
+
+
+// -----------------------------
+// #2. Header
+// -----------------------------
+
+.theme-header {
+    .flex(@display: flex);
+    .align-items(@align: center);
+    .justify-content(@justify: space-between);
+
+    @media @bp-tablet {
+        .flex-wrap(@wrap: wrap);
+        .justify-content(@justify: center);
+        padding-top: 20px;
+
+        #page-zones__template-widgets__extendednavigation-navigation {
+            .flex-order(@order: 3);
+            width: 100%;
+        }
+    }
+
+
+
+
+    // Buttons
+    // -------------------
+
+    .header-buttons {
+        .flex(@display: flex);
+        .justify-content(@justify: space-between);
+
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+
+        @media @bp-tablet {
+            padding: 10px;
+        }
+    }
+
+
+
+
+    // Logo
+    // -------------------
+
+    .logo {
+        margin-right: 10px;
+    }
+
+}
+
+
+
+
+// -----------------------------
+// 3.  #Feature
+// -----------------------------
+
+.feature {
+
+
+
+    // Background Image
+    // -------------------
+
+    .background-image {
+        min-height: 550px;
+        background-size: cover;
+
+        .flex-vert-center;
+
+    }
+
+
+
+
+    .content-wrap {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 90%;
+        text-align: center;
+
+        padding: 30px 0;
+
+        h2,
+        h3 {
+            color: @white;
+            text-shadow: 2.5px 4.33px 10px rgba(0,0,0,0.3);
+            padding-bottom: 30px;
+        }
+
+        h3 {padding-bottom: 40px;}
+    }
+}
+
+.pricing .feature {
+    .background-image {
+        min-height: 350px;
+
+    }
+}
+
+
+
+
+// -----------------------------
+// 4.  #Sections
+// -----------------------------
+
+section  .white {
+    padding-top: 100px;
+    border-bottom: 1px solid @grey-borders;
+
+    @media @bp-mobile {
+        padding-top: 30px;
+    }
+}
+
+section  .grey {
+    padding-top: 100px;
+    border-bottom: 1px solid @grey-borders;
+    background-color: @grey-light;
+
+    @media @bp-mobile {
+        padding-top: 30px;
+    }
+}
+
+section  .black {
+    padding-top: 80px;
+    background-color: @black;
+
+    @media @bp-mobile {
+        padding-top: 30px;
+    }
+}
+
+section  .templates,
+section  .features,
+section  .plugins,
+section  .get-started {
+    text-align: center;
+}
+
+// Sub heading text styles
+
+.sub-heading {
+    width: 60%;
+    margin: 0 auto 20px;
+
+    @media @bp-tablet {
+        width: 80%;
+    }
+
+    @media @bp-mobile {
+        width: 100%;
+    }
+}
+
+
+// Editor Features
+// -----------------------------
+
+.editor-features {
+    width: 80%;
+    margin: 40px auto 30px;
+    padding: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    li {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        position: relative;
+        -webkit-flex: 0 1 32%;
+        -ms-flex: 0 1 32%;
+        flex: 0 1 32%;
+        height: 100%;
+        margin-bottom: 10px;
+        list-style: none;
+
+        // Display 50% at tablet
+        @media @bp-tablet {
+            -webkit-flex: 0 1 50%;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+            margin-bottom: 4%;
+        }
+
+        // Display 100% at mobile
+        @media @bp-mobile {
+            display: block;
+
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+        }
+    }
+
+}
+
+// Easy to use
+// -----------------------------
+
+.editor {
+    margin-bottom: -10px;
+
+    .flex-vert-center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .editor-copy {
+        -webkit-flex: 0 1 40%;
+        -ms-flex: 0 1 40%;
+        flex: 0 1 40%;
+
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+
+        @media @bp-tablet {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+        }
+    }
+
+    .editor-image {
+        -webkit-flex: 0 1 57%;
+        -ms-flex: 0 1 57%;
+        flex: 0 1 57%;
+        margin-top: auto;
+
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+
+        @media @bp-tablet {
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    // Bullet points
+    ul {
+        padding: 0;
+        margin-top: 35px;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 25px;
+
+        // Technique to stop wrapping of text below
+        svg {
+            float: left;
+            margin-right: 18px;
+        }
+
+        p {
+            overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+
+}
+
+
+// Get Started
+// -----------------------------
+
+.get-started {
+    padding-bottom: 80px;
+
+    // Typography changes
+    h1,
+    p {
+        color: @white;
+    }
+
+    a {
+        color: @white;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+    @media @bp-mobile {
+        padding-bottom: 30px;
+    }
+}
+
+// Pricing > Content
+// -----------------------------
+
+.feature-page {
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+.pricing-try,
+.pricing-ticks {
+    .flex-vert-center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    h1 {
+        padding-bottom: 0;
+        margin: 20px 20px 20px 0;
+        text-align: center;
+
+        @media @bp-mobile {
+            margin: 20px auto 20px;
+        }
+    }
+}
+
+.pricing-ticks--header {
+    font-size: 24px;
+    text-align: center;
+    color: @black;
+    margin: 70px 0 20px;
+}
+.pricing-ticks {
+    margin: 0 auto 100px;
+    width: 60%;
+
+    @media @bp-mobile {
+        width: 100%;
+    }
+
+
+    .list-left,
+    .list-right {
+        margin-bottom: auto;
+
+        width: 42%;
+
+        @media @bp-tablet {
+            width: 70%;
+            margin: 0;
+        }
+
+        @media @bp-mobile {
+            width: 100%;
+        }
+    }
+}
+
+.pricing-ticks {
+  li {
+    list-style: none;
+
+    &:before {
+        content: "";
+        background: image('/images/icons/tick.png') no-repeat top center;
+        width: 18px;
+        height: 14px;
+        margin-right: 6px;
+        background-position: 17px 7px;
+        padding: 20px;
+        float: left;
+
+    }
+  }
+}
+
+
+
+// -----------------------------
+// 5.  #Signup / Login Page
+// -----------------------------
+
+.login-signup {
+    .flex-vert-center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    .form {
+        margin: 20px auto 15px;
+    }
+
+    .form-container {
+          text-align: center;
+
+        a, p {
+            color: @white;
+            .transition(@duration:0.2s, @ease:ease-out)
+        }
+        a:hover {
+            color: darken(@white, 10%);
+        }
+
+        img {
+            width: 90%;
+            height: auto;
+        }
+
+        @media @bp-tablet {
+            margin-bottom: auto;
+            margin-top: 80px;
+        }
+    }
+}
+
+.login-bg {
+    background-color: darken(@blue,5%);
+}
+
+.signup-bg {
+    background-color: darken(@brand-color,5%);
+}
+
+
+
+// -----------------------------
+// 6.  #Footer
+// -----------------------------
+
+.footer {
+    .container {
+        .flex-vert-center;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        @media @bp-tablet {
+            display: block;
+        }
+    }
+
+
+    .copyright {
+        margin: 20px 0;
+
+        p {
+            margin: 0;
+        }
+
+        @media @bp-tablet {
+            float: none;
+            width: 100%;
+            margin-left: 0 auto;
+            text-align: center;
+        }
+    }
+
+    ul.footer-links {
+        padding: 0;
+
+
+        @media @bp-tablet {
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+    }
+
+    .footer-links li {
+        display: inline-block;
+        margin-right: 30px;
+        padding: 5px 0 5px 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        > a {
+            color: @grey;
+            font-weight: 400;
+            font-size: 18px;
+            text-decoration: none;
+
+            .transition(@duration:0.3s, @ease:ease-in-out);
+        }
+
+        a:hover {
+            color: @black;
+        }
+
+        a.selected {
+            color: @black;
+        }
+
+        @media @bp-mobile {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+}
+
+
+

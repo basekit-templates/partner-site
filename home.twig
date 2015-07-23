@@ -1,0 +1,166 @@
+{# Copyright 2014 BaseKit Platform Ltd #}
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- Header -->
+  {% include '/includes/header.twig' %}
+<!-- End Header -->
+
+<!-- Page Content -->
+<section class="template-content">
+
+    <!-- Feature Section -->
+    {{widget('feature', 'homepagefeature', {
+      'header': 'This is the header',
+      'strapline': 'This is the strapline',
+      'defaultBgImg': asset('images/feature.jpg'),
+      'positionTopPercentage': '50',
+      'showBtn': true,
+      'buttonText': 'This is the button',
+      'action': 'external',
+      'url': 'http://docs.basekit.com',
+      'target': '_blank'
+    })|raw}}
+    <!-- End Feature Section -->
+
+
+      <!-- Templates Section -->
+      <section class="white  templates">
+        <div class="container slide-bottom">
+        {{widget('content', 'templates-content', {content: '<h1>Every site looks great</h1>'})|raw}}
+        {{widget('content', 'templates-content1', {content: '<p class="sub-heading">Over 100 professional, responsive site designs to choose from.<br> Change colours, fonts and layouts to make it your own.</p>'})|raw}}
+
+        <!-- Theme Showcase Slider !-->
+        {% include 'includes/theme-slider.twig' %}
+        </div>
+      </section>
+      <!-- End Templates Section -->
+
+
+    <!-- Features Section -->
+    <section class="white  features">
+      <div class="container  slide-bottom">
+        {{widget('content', 'features-content', {content: '<h1>Fully featured website editor</h1>'})|raw}}
+        {{widget('content', 'features-content1', {content: '<p class="sub-heading">Build your perfect business website with our fully featured editor. Add a twitter feed, google map and get images looking great with our in built image editor.</p>'})|raw}}
+
+        <ul class="editor-features">
+            <li>
+              {{widget('content', 'features-content2', {content: '<p>- SEO integration</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content3', {content: '<p>- Google Maps</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content4', {content: '<p>- Drag and drop editor</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content5', {content: '<p>- Customise your domain</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content6', {content: '<p>- Built in image editing</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content7', {content: '<p>- Stock image integration</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content8', {content: '<p>- Contact forms</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content9', {content: '<p>- Social integration</p>'})|raw}}
+            </li>
+
+            <li>
+              {{widget('content', 'features-content10', {content: '<p>- Quickly add content</p>'})|raw}}
+            </li>
+          </ul>
+      </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- Editor Section -->
+    <section class="grey">
+      <div class="container editor slide-bottom">
+
+        <div class="editor-image">
+          <img src="{{asset('images/editor-image.jpg')}}"/>
+        </div>
+
+        <div class="editor-copy">
+          {{widget('content', 'editor-content', {content: '<h1>Easy to use editor</h1>'})|raw}}
+          {{widget('content', 'editor-content1', {content: '<p>Our editor is really simple to use which makes<br> building your site quick and easy.</p>'})|raw}}
+        </div>
+
+      </div>
+    </section>
+    <!-- End Editor Section -->
+
+    <!-- Ecom, Menu Blog -->
+    <section class="white">
+      <div class="container plugins  slide-bottom" data-plugin-options='{"offset":-400}'>
+        {{widget('content', 'plugins-content', {content: '<h1>Ecommerce, Blog &amp; Menu</h1>'})|raw}}
+        {{widget('content', 'plugins-content1', {content: '<p class="sub-heading">Our editor includes eCommerce, Blog and Menu platforms to provide your<br> business with everything it needs online.</p>'})|raw}}
+
+        <!-- Plugin Tabs -->
+        {% include 'includes/plugin-tabs.twig' %}
+
+      </div>
+    </section>
+    <!-- End Ecom, Menu Blog -->
+
+    <!-- Get Started -->
+    <section class="black">
+      <div class="container get-started  slide-bottom" data-plugin-options='{"distance":50}'>
+        {{widget('content', 'signin-heading', {"content":'<h1>Get Started</h1>'})|raw}}
+        {{widget('button', 'button', {
+              'text': 'Sign up',
+              'action': 'internal',
+              'url': '/signup',
+              'target': '_blank'
+        })|raw}}
+      </div>
+    </section>
+    <!-- End Get Started -->
+
+    <!-- FOOTER -->
+
+    {% include 'includes/footer.twig' %}
+
+</section>
+<!-- End Page Content -->
+
+<!-- SLIDER JS -->
+  <script src="{{asset('js/swiper.min.js')}}"></script>
+
+  <script>
+
+    // Initialize Tech Tab Slider
+    var techswiper = new Swiper('.tech-swiper', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      autoplay: 5000,
+      autoplayDisableOnInteraction: true,
+      effect: 'fade',
+       paginationBulletRender: function (index, className) {
+          return '<span class="' + className + '">' + '<i class="arrow"></i>' + '</span>';
+      }
+    });
+
+
+    // Initialize Theme Slider
+    var themeswiper = new Swiper('.showcase-swiper', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      effect: 'fade'
+    });
+  </script>
+
+{% endblock %}

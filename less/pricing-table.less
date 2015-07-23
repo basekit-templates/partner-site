@@ -1,0 +1,150 @@
+// --------------------------------------
+// Startups-website: LESS > Pricing Table
+// --------------------------------------
+
+
+// -----------------------------
+// Flexbox Layout
+// -----------------------------
+
+
+.pricing-table {
+  background-color: @white;
+  margin: 0 auto 100px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;        /* Flex layout so items have equal height  */
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;  /* Allow items to wrap into multiple lines */
+  max-width: 80%;
+}
+
+
+.item {
+  flex: 1 0 300px;
+  -webkit-box-flex: 1 0 300px;
+  -moz-box-flex: 1 0 300px;
+  -webkit-flex: 1 0 300px;
+  -ms-flex: 1 0 300px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;        /* Lay out each item using flex layout */
+
+  -webkit-flex-flow: column;
+  flex-flow: column;    /* Lay out item’s contents vertically  */
+
+  @media @bp-mobile {
+  flex: 1 0 260px;
+  -webkit-box-flex: 1 0 260px;
+  -moz-box-flex: 1 0 260px;
+  -webkit-flex: 1 0 260px;
+  -ms-flex: 1 0 260px;
+  }
+}
+
+
+.item-info {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;     /* Auto top margin pushes button to bottom */
+}
+
+
+
+// Item Header
+// -----------
+.item-header {
+  padding: 15px 5px 15px;
+  text-align: center;
+  background-color: @black;
+
+  h1 {
+    color: @white;
+    padding-bottom: 0;
+    font-size: 32px;
+  }
+}
+
+
+
+// Price
+// ----------
+
+.item-price {
+  padding: 40px 0 30px;
+  text-align: center;
+  background-color: #e8ebee;
+
+  span,
+  p {
+    color: @grey;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  span {
+    font-size: 60px;
+  }
+}
+
+
+
+
+// Features List
+// -------------
+.item-list {
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+
+
+
+// Popular
+// -------------
+
+.popular .item-price,
+.popular .item-list {
+    border-left: 2px solid @grey;
+    border-right: 2px solid @grey;
+
+    @media @bp-mobile {
+      border-color: @blue;
+    }
+}
+
+.popular .item-price p,
+.popular .item-price span {
+  color: @blue;
+}
+
+
+.item--cta {
+  border-color: #9dc7e3;
+}
+
+.item__info {
+  border-top: 1px solid #ccc;
+}
+.item__info__price {
+  font-size: 1.5rem;
+}

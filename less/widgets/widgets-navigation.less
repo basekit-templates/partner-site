@@ -1,0 +1,210 @@
+
+// Navigation Item borders
+// -----------------------
+.navigation-item {
+        border-right: 2px solid @grey-borders;
+
+        &:last-child,
+        .navigation-list--children .navigation-item {
+            border-right: none;
+        }
+}
+
+
+// Item Name
+// -----------------
+
+.item-name {
+    .transition(@duration:0.2s, @ease:ease-in-out);
+
+}
+
+
+// Selected Navigation Link
+.navigation-item.selected > .item-name {
+    text-decoration: underline;
+}
+
+
+// Folders
+// -----------------
+
+.navigation-list--children {
+    min-width: 150px;
+}
+
+
+
+
+// Folder Item
+.navigation-list--children .item-name {
+
+    &:hover {
+        color: @heading-color;
+    }
+}
+
+
+
+
+// Parent nav items, adds arrow icon
+
+.item-name--parent:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    margin-left: 4px;
+    border: 5px solid transparent;
+    border-top-color: @color-swatch6;
+}
+
+
+
+
+// Mobile Navigation
+// -----------------
+
+
+@media @bp-tablet {
+
+    // Clears margin on ul, hides navigation on mobile (made visible in conjunction with navigation-toggle)
+    .navigation-list {
+        margin: 0;
+        display: none;
+
+        &.open {
+            display: block;
+        }
+    }
+
+    .navigation-item {
+        display: block;
+        border-right: none;
+    }
+}
+
+
+
+
+// Navigation Toggle
+// -----------------
+
+
+// Hide toggle on desktop
+.navigation-toggle {
+    display: none;
+}
+
+
+
+.navigation-toggle {
+    .animation;
+
+    // Displays as icon's middle bar
+    background-color: @black;
+    background-clip: content-box;
+    width: 50px;
+    height: 47px;
+    padding: 22px 10px;
+    position: relative;
+    right: 0;
+    margin: 31px auto;
+    text-indent: 9999px;
+    overflow: hidden;
+
+    .transition(@duration:0.2s, @ease:ease-in-out);
+
+
+    @media @bp-tablet {
+        display: block;
+    }
+
+
+    // Top and bottom navigation item bar
+
+    &:after, &:before {
+        content: "";
+        height: 3px;
+        width: 30px;
+        position: absolute;
+        left: 10px;
+        display: block;
+        background: @black;
+        margin-right: 0;
+        margin-left: 0;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+
+
+    // Top bar
+
+    &:before {
+        top: 14px;
+
+    }
+
+
+    // Bottom bar
+
+    &:after {
+        bottom: 14px;
+    }
+
+
+
+
+    &:hover {
+        background-color: @black;
+
+        &:after, &:before {
+            background: @black;
+        }
+    }
+
+
+    // Toggle Button open state
+    // ------------------------------
+
+    .open & {
+        background-color: fade(@black, 0%);
+        z-index: 100000;
+
+        &:before {
+            top: 23px; background: @black; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
+
+        }
+
+        &:after {
+            bottom: 21px; background: @black; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
+        }
+    }
+}
+
+
+
+@keyframes bar1 {
+    0% { top: 13px;}
+    50% { top: 23px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);  }
+    100% {top: 23px; background: @color-swatch1; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);   }
+}
+
+@-webkit-keyframes bar1 {
+    0% { top: 13px;}
+    50% { top: 23px; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);   }
+    100% {  }
+}
+
+@keyframes bar2 {
+    0% { bottom: 13px;}
+    50% { bottom: 21px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);  }
+    100% {}
+}
+
+@-webkit-keyframes bar2 {
+    0% { bottom: 13px;}
+    50% { bottom: 21px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);   }
+    100% {}
+}

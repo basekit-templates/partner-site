@@ -1,0 +1,110 @@
+{
+    "name": "Partner template",
+    "widgetVersion":2,
+    "thumbnail": "baseplate.png",
+    "pageTypes": ["home","pricing","signup","login"],
+    "images": [
+        "images/feature.jpg",
+        "images/logo.png"
+    ],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#7d7d7d",
+            "color3":"#ed1c24",
+            "color4":"#ed1c24",
+            "color5":"#7d7d7d",
+            "color6":"#333333",
+            "color7":"#ebebeb"
+        }
+    },
+    "fontSwatch": {
+       "title": "Oswald, Arial, sans-serif",
+        "font1": {
+            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-size": "50px",
+            "font-weight": "400",
+            "line-height": "1.4",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-size": "30px",
+            "font-weight": "700",
+            "line-height": "1",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-size": "19px",
+            "font-weight": "400",
+            "line-height": "1",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "1",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch4",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+         },
+        "font7": {
+            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "inherit",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,10%)"
+        },
+        "font8": {
+            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-size": "50px",
+            "font-weight": "400",
+            "line-height": "1.4",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-size": "28px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
+}

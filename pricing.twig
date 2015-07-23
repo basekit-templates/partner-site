@@ -1,0 +1,99 @@
+{# Copyright 2014 BaseKit Platform Ltd #}
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- Header -->
+  {% include '/includes/header.twig' %}
+<!-- End Header -->
+
+<!-- Page Content -->
+<section class="template-content pricing">
+
+    <!-- Feature Section -->
+    {{widget('feature', 'pricingfeature', {
+      'header': 'This is the header',
+      'strapline': 'This is the strapline',
+      'defaultBgImg': asset('images/feature.jpg'),
+      'positionTopPercentage': '50',
+      'showBtn': true,
+      'buttonText': 'This is the button',
+      'action': 'external',
+      'url': 'http://docs.basekit.com',
+      'target': '_blank'
+    })|raw}}
+    <!-- End Feature Section -->
+
+    <!-- Pricing Table Section -->
+    <section class="grey">
+
+    <!-- Pricing Table -->
+      {% include 'includes/pricing-table.twig' %}
+
+      <div class="container">
+        <div class="pricing-try">
+          {{widget('content', 'pricing-page-content', {content: '<h1>Try It Free with a 14-day trial</h1>'})|raw}}
+          {{widget('button', 'button', {
+            'text': 'Get started',
+            'action': 'internal',
+            'url': '/signup',
+            'target': '_blank'
+          })|raw}}
+        </div>
+
+        {{widget('content', 'pricing-page-content1', {content: '<p class="pricing-ticks--header">All plans include</p>'})|raw}}
+
+      <div class="pricing-ticks">
+
+        <ul class="list-left">
+          <li>{{widget('content', 'pricing-page-content2', {content: '<p>Unlimited Storage</p>'})|raw}}</li>
+          <li>{{widget('content', 'pricing-page-content3', {content: '<p>SEO Management Tools</p>'})|raw}}</li>
+          <li>{{widget('content', 'pricing-page-content4', {content: '<p>Image Editing</p>'})|raw}}</li>
+        </ul>
+
+        <ul class="list-right">
+          <li>{{widget('content', 'pricing-page-content2', {content: '<p>Mobile and Tablet Optimisation</p>'})|raw}}</li>
+          <li>{{widget('content', 'pricing-page-content3', {content: '<p>Social Media Integration</p>'})|raw}}</li>
+          <li>{{widget('content', 'pricing-page-content4', {content: '<p>Contact Forms</p>'})|raw}}</li>
+        </ul>
+
+      </div>
+
+    </section>
+    <!-- End Pricing Table Section -->
+
+    <!-- FOOTER -->
+
+    {% include 'includes/footer.twig' %}
+
+</section>
+<!-- End Page Content -->
+
+<!-- SLIDER JS -->
+  <script src="{{asset('js/swiper.min.js')}}"></script>
+
+  <script>
+
+    // Initialize Tech Tab Slider
+    var techswiper = new Swiper('.tech-swiper', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      autoplay: 5000,
+      autoplayDisableOnInteraction: true,
+      effect: 'fade',
+       paginationBulletRender: function (index, className) {
+          return '<span class="' + className + '">' + '<i class="arrow"></i>' + '</span>';
+      }
+    });
+
+
+    // Initialize Theme Slider
+    var themeswiper = new Swiper('.showcase-swiper', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      effect: 'fade'
+    });
+  </script>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+// -----------------------------------
+// Startups Websites: LESS > Buttons
+// -----------------------------------
+
+// General Button Styles
+.button,
+.userregistrationbtn,
+.userloginbtn {
+    padding: 7px 24px;
+    .rounded(@radius: 2px);
+    .transition(@duration:0.3s, @ease:ease-in-out);
+
+    // Font Styles
+    font-family: @font-swatch6-font-family;
+
+    text-decoration: none;
+
+    @media @bp-desktop {
+        padding: 5px 10px;
+    }
+}
+
+
+
+.theme-header {
+    .button {
+        margin-right: 10px;
+        white-space: nowrap;
+        border: 2px solid @brand-color;
+    }
+
+    .login-button .button {
+
+        color: @black;
+        background-color: @white;
+        border: 2px solid @black;
+
+        &:hover {
+            color: @white;
+            background-color: @black;
+        }
+
+        &:active {
+            color: @white;
+            background-color: @black;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+
+<div class="tabs color3 stack effect4 tcenter">
+    <!--TAB 1-->
+    <input type="radio" name="tabs" checked id="tab1" class="content1">
+  <label for="tab1" style='border-left: 0'>
+    <span>
+        {{widget('content', 'tablabel', {content: '<span class="ecommerce">eCommerce</span>'})|raw}}
+    </span>
+    </span>
+  </label>
+  <!--TAB 2-->
+    <input type="radio" name="tabs" id="tab2" class="content2">
+    <label for="tab2">
+    <span>
+        {{widget('content', 'tablabel', {content: '<span class="blog">Blog</span>'})|raw}}
+    </span>
+  </label>
+  <!--TAB 3-->
+    <input type="radio" name="tabs" id="tab3" class="content3">
+    <label for="tab3">
+    <span>
+        {{widget('content', 'tablabel', {content: '<span class="menu">Menu</span>'})|raw}}
+    </span>
+  </label>
+
+  <!--CONTENT-->
+  <ul>
+    <!--TAB 1-->
+    <li class="content1">
+      <div class="plugin-copy">
+        {{widget('content', 'sidebarcontent', {content: '<h2>Simple ecommerce</h2>'})|raw}}
+        {{widget('content', 'sidebarcontent', {content: '<p>Set up your online shop and start taking payments within minutes.</p>'})|raw}}
+      </div>
+      <div class="plugin-image">
+        <img src="{{asset('images/plugins/plugins-ecommerce.jpg')}}"/>
+      </div>
+    </li>
+    <!--TAB 2-->
+    <li class="content2">
+      <div class="plugin-copy">
+        {{widget('content', 'sidebarcontent', {content: '<h2>Simple Blogging</h2>'})|raw}}
+        {{widget('content', 'sidebarcontent', {content: '<p>Publishing your blog content is easy. Keep your customers up to date with your business.</p>'})|raw}}
+      </div>
+      <div class="plugin-image">
+        <img src="{{asset('images/plugins/plugins-blog.jpg')}}"/>
+      </div>
+    </li>
+    <!--TAB 3-->
+    <li class="content3">
+      <div class="plugin-copy">
+        {{widget('content', 'sidebarcontent', {content: '<h2>Simple Menu</h2>'})|raw}}
+        {{widget('content', 'sidebarcontent', {content: '<p>Our menu editor allow you to edit and preview your menu on any mobile device.</p>'})|raw}}
+      </div>
+      <div class="plugin-image">
+        <img src="{{asset('images/plugins/plugins-menu.jpg')}}"/>
+      </div>
+    </li>
+  </ul>
+</div>
+
