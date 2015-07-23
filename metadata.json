@@ -17,6 +17,15 @@
             "color5":"#7d7d7d",
             "color6":"#333333",
             "color7":"#ebebeb"
+        },
+            "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#7d7d7d",
+            "color3":"#ed1c24",
+            "color4":"#ed1c24",
+            "color5":"#7d7d7d",
+            "color6":"#333333",
+            "color7":"#ebebeb"
         }
     },
     "fontSwatch": {
