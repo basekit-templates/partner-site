@@ -51,7 +51,7 @@ body {
 
 .form {
     background-color: @bg-color;
-    padding: 40px 0 0;
+    padding: 40px 30PX 0;
     box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.1);
 
     .rounded(@radius: 2px);
@@ -59,7 +59,6 @@ body {
     h2 {
         text-align: center;
         color: @black;
-        padding: 0;
     }
 
     fieldset {
@@ -99,6 +98,10 @@ body {
 input#persistent-login {
     margin: 0px 0 20px;
     width: 30px;
+    display: inline-block;
+}
+
+label[for="persistent-login"] {
     display: inline-block;
 }
 
@@ -620,7 +623,7 @@ section  .get-started {
 }
 
 .login-bg {
-    background-color: darken(@brand-color,5%);
+    background-color: @black;
 }
 
 .signup-bg {
