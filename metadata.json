@@ -2,7 +2,8 @@
     "name": "Partner template",
     "widgetVersion":2,
     "thumbnail": "baseplate.png",
-    "pageTypes": ["home","pricing","signup","login"],
+    "templateType":"standard",
+    "pageTypes": ["home"],
     "images": [
         "images/feature.jpg",
         "images/logo.png"
@@ -10,31 +11,22 @@
     "colorSwatches":
     {
         "Swatch 1": {
-        "color1":"#ffffff",
-        "color2":"#7d7d7d",
-        "color3":"#ed1c24",
-        "color4":"#ed1c24",
-        "color5":"#7d7d7d",
-        "color6":"#333333",
-        "color7":"#ebebeb"
-    },
-        "Swatch 2": {
-        "color1":"#ffffff",
-        "color2":"#7d7d7d",
-        "color3":"#ed1c24",
-        "color4":"#ed1c24",
-        "color5":"#7d7d7d",
-        "color6":"#333333",
-        "color7":"#ebebeb"
-    }
+            "color1":"#ffffff",
+            "color2":"#7d7d7d",
+            "color3":"#ed1c24",
+            "color4":"#ed1c24",
+            "color5":"#7d7d7d",
+            "color6":"#333333",
+            "color7":"#ebebeb"
+        }
     },
     "fontSwatch": {
-       "title": "Oswald, Arial, sans-serif",
+       "title": "Helvetica Neue, Helvetica, Arial, sans-serif",
         "font1": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "50px",
             "font-weight": "400",
-            "line-height": "1.4",
+            "line-height": "64px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -42,7 +34,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "30px",
             "font-weight": "700",
-            "line-height": "1",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -50,7 +42,7 @@
             "font-family": "\"Helvetica\", Arial, sans-serif",
             "font-size": "19px",
             "font-weight": "400",
-            "line-height": "1",
+            "line-height": "24px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -58,7 +50,7 @@
             "font-family": "\"Helvetica\", Arial, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
-            "line-height": "1",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -95,7 +87,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "50px",
             "font-weight": "400",
-            "line-height": "1.4",
+            "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
