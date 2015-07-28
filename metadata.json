@@ -3,7 +3,7 @@
     "widgetVersion":2,
     "thumbnail": "baseplate.png",
     "templateType":"standard",
-    "pageTypes": ["home","pricing","signup","login"],
+    "pageTypes": ["home"],
     "images": [
         "images/feature.jpg",
         "images/logo.png"
@@ -57,91 +57,91 @@
         }
     },
     "fontSwatch": {
-       "title": "Oswald, Arial, sans-serif",
+       "title": "Helvetica Neue, Helvetica, Arial, sans-serif",
         "font1": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "50px",
-            "font-weight": "400",
-            "line-height": "1.4",
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "28px",
+            "font-weight": "700",
+            "line-height": "inherit",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "30px",
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "22px",
             "font-weight": "700",
-            "line-height": "1",
+            "line-height": "inherit",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "19px",
+            "font-family": "\"Crimson Text\", \"Times New Roman\", serif",
+            "font-size": "24px",
             "font-weight": "400",
-            "line-height": "1",
+            "line-height": "inherit",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Crimson Text\", \"Times New Roman\", serif",
             "font-size": "18px",
             "font-weight": "400",
-            "line-height": "1",
+            "line-height": "inherit",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font5": {
             "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "18px",
+            "font-size": "15px",
             "font-weight": "inherit",
-            "line-height": "30px",
+            "line-height": "28px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
             "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "18px",
-            "font-weight": "400",
+            "font-size": "14px",
+            "font-weight": "700",
             "line-height": "inherit",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch4",
-            "letter-spacing": "1px",
+            "color-hover": "@color-swatch7",
+            "letter-spacing": "inherit",
             "background-color": "@color-swatch1",
             "background-color-hover": "@color-swatch1"
          },
         "font7": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "18px",
+            "font-family": "\"Crimson Text\", \"Times New Roman\", serif",
+            "font-size": "19px",
             "font-weight": "inherit",
             "line-height": "inherit",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
-            "background-color-hover": "@color-swatch3"
+            "background-color-hover": "lighten(@color-swatch3,10%)"
         },
         "font8": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "50px",
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "34px",
             "font-weight": "400",
-            "line-height": "1.4",
-            "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "line-height": "46px",
+            "color": "@color-swatch1",
+            "letter-spacing": "1px"
         },
         "font9": {
             "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "24px",
+            "font-size": "20px",
             "font-weight": "inherit",
-            "line-height": "38px",
-            "color": "@color-swatch5",
+            "line-height": "inherit",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "28px",
-            "font-weight": "300",
-            "line-height": "inherit",
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "42px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "1px"
         }
     }
 }
