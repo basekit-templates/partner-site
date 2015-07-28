@@ -26,7 +26,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "50px",
             "font-weight": "400",
-            "line-height": "1.4",
+            "line-height": "64px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
