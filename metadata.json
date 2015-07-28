@@ -12,48 +12,12 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#e2cf56",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#000000",
-            "color7":"#000000"
-        },
-        "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#ee4d83",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#000000",
-            "color7":"#000000"
-        },
-        "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#5776b8",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#000000",
-            "color7":"#000000"
-        },
-        "Swatch 4": {
-            "color1":"#ffffff",
-            "color2":"#87d0e0",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#000000",
-            "color7":"#000000"
-        },
-        "Swatch 5": {
-            "color1":"#ffffff",
-            "color2":"#449a88",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#000000",
-            "color7":"#000000"
+            "color2":"#7d7d7d",
+            "color3":"#ed1c24",
+            "color4":"#ed1c24",
+            "color5":"#7d7d7d",
+            "color6":"#333333",
+            "color7":"#ebebeb"
         }
     },
     "fontSwatch": {
