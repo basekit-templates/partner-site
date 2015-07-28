@@ -2,6 +2,7 @@
     "name": "Partner template",
     "widgetVersion":2,
     "thumbnail": "baseplate.png",
+    "templateType":"standard",
     "pageTypes": ["home","pricing","signup","login"],
     "images": [
         "images/feature.jpg",
