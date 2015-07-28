@@ -50,7 +50,7 @@ body {
 // ----------
 
 .form {
-    background-color: @white;
+    background-color: @bg-color;
     padding: 40px 0 0;
     box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.1);
 
@@ -63,7 +63,7 @@ body {
     }
 
     fieldset {
-        background-color: @white;
+        background-color: @bg-color;
         .rounded(@radius: 2px);
         padding: 30px;
 
@@ -128,28 +128,19 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    color: @brand-color;
-
     padding-bottom: 22px;
 }
 
 h2 {
     padding-bottom: 20px;
-    color: @brand-color;
 }
 
 h3 {
     padding-bottom: 15px;
 }
 
-h4, .heading-4 {
-    font-size: 16px;
-    line-height: 32px;
-    color: @grey;
-}
-
 a {
-    color: @blue;
+    color: @brand-color;
 
     &:focus {
         outline: -webkit-focus-ring-color auto 0px;
@@ -245,7 +236,7 @@ a {
 
         h2,
         h3 {
-            color: @white;
+            color: @bg-color;
             text-shadow: 2.5px 4.33px 10px rgba(0,0,0,0.3);
             padding-bottom: 30px;
         }
@@ -482,11 +473,11 @@ section  .get-started {
     // Typography changes
     h1,
     p {
-        color: @white;
+        color: @bg-color;
     }
 
     a {
-        color: @white;
+        color: @bg-color;
     }
 
     h2 {
@@ -609,11 +600,11 @@ section  .get-started {
           text-align: center;
 
         a, p {
-            color: @white;
+            color: @bg-color;
             .transition(@duration:0.2s, @ease:ease-out)
         }
         a:hover {
-            color: darken(@white, 10%);
+            color: darken(@bg-color, 10%);
         }
 
         img {
