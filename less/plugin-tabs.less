@@ -5,7 +5,7 @@
     z-index: 1;
     display: inline-block;
     width: 25%;
-    line-height: 75px;
+    line-height: 43px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -13,9 +13,9 @@
 
     .transition(@duration:0.2s, @ease:ease-in-out);
 
-    @media @bp-tablet {
-      line-height: 45px
-    }
+    // @media @bp-tablet {
+    //   line-height: 45px
+    // }
 }
 
 input:checked + tabs label{
@@ -27,9 +27,8 @@ input:checked + tabs label{
     padding: 5px;
 
     &:before {
-      width: 37px;
+      // width: 37px;
       height: 32px;
-      margin-right: 12px;
       display: inline-block;
       vertical-align: middle;
     }
@@ -38,11 +37,11 @@ input:checked + tabs label{
 
 input:checked + label span span:after {
       content: " ";
-      height: 20px;
-      width: 20px;
+      height: 13px;
+      width: 12px;
       position: absolute;
       left: 50%;
-      bottom: -16px;
+      bottom: -5px;
       pointer-events: none;
       background-color: white;
       border-top: 1px solid @brand-color;
@@ -62,16 +61,19 @@ input:checked + label span span:after {
 span .ecommerce:before {
   content:"";
   background: image("/images/plugins/ecom.png") no-repeat;
+  width: 37px;
 }
 
 span .blog:before {
   content:"";
   background: image("/images/plugins/blog.png") no-repeat;
+  width: 32px;
 }
 
 span .menu:before {
   content:"";
   background: image("/images/plugins/menu.png") no-repeat;
+  width: 32px;
 }
 
 span .ecommerce:hover:before,
