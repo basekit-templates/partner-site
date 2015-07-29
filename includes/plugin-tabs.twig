@@ -4,7 +4,7 @@
     <input type="radio" name="tabs" checked id="tab1" class="content1">
   <label for="tab1" style='border-left: 0'>
     <span>
-        {{widget('content', 'tablabel', {content: '<span class="ecommerce">eCommerce</span>'})|raw}}
+        <span class="ecommerce">{{widget('content', 'tablabel', {content: 'eCommerce'})|raw}}</span>
     </span>
     </span>
   </label>
@@ -12,14 +12,14 @@
     <input type="radio" name="tabs" id="tab2" class="content2">
     <label for="tab2">
     <span>
-        {{widget('content', 'tablabel1', {content: '<span class="blog">Blog</span>'})|raw}}
+        <span class="blog">{{widget('content', 'tablabel1', {content: 'Blog'})|raw}}</span>
     </span>
   </label>
   <!--TAB 3-->
     <input type="radio" name="tabs" id="tab3" class="content3">
     <label for="tab3">
     <span>
-        {{widget('content', 'tablabel2', {content: '<span class="menu">Menu</span>'})|raw}}
+        <span class="menu">{{widget('content', 'tablabel2', {content: 'Menu'})|raw}}</span>
     </span>
   </label>
 
