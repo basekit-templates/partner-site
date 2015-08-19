@@ -3,7 +3,7 @@
     "widgetVersion":2,
     "thumbnail": "baseplate.png",
     "templateType":"standard",
-    "pageTypes": ["home","pricing","signup","login"],
+    "pageTypes": ["home","pricing","signup","login", "reset-password", "forgot-password"],
     "images": [
         "images/feature.jpg",
         "images/logo.png"
