@@ -89,6 +89,11 @@
       <div class="container editor slide-bottom">
 
         <div class="editor-image">
+          <div class="custom-image">
+            {{widget('image', 'editorImageSample', {
+              'src': asset('images/plugins/editor-image-sample.jpg')
+            })|raw}}
+          </div>
           <img src="{{asset('images/editor-image.jpg')}}"/>
         </div>
 
