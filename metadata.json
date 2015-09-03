@@ -6,7 +6,13 @@
     "pageTypes": ["home","pricing","signup","login", "reset-password", "forgot-password"],
     "images": [
         "images/feature.jpg",
-        "images/logo.png"
+        "images/logo.png",
+        "images/plugins/editor-image-sample.jpg",
+        "images/plugins/plugins-blog-post1.jpg",
+        "images/plugins/plugins-blog-post2.jpg",
+        "images/plugins/plugins-menu-item1.jpg",
+        "images/plugins/plugins-menu-item2.jpg",
+        "images/plugins/plugins-ecommerce-product.jpg"
     ],
     "colorSwatches":
     {
