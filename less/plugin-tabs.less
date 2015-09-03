@@ -186,12 +186,37 @@ input:checked + label span span.menu:before {
   -webkit-flex: 0 1 60%;
   -ms-flex: 0 1 60%;
   flex: 0 1 60%;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-image .image-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+  }
 }
 
-.plugin-image img {
-  width: 100%;
-  height: auto;
+
+
+// Slide 1
+.content1 {
+  .custom-image img {
+      width: 48%;
+      margin: 12% 0 0 0.8%;
+      display: block;
+      max-height: 380px;
+      object-fit: contain;
+    }
 }
+
+
 
 /** COLORS **/
 
