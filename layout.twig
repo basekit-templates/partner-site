@@ -27,7 +27,7 @@
     {% include basekit.headScript %}
     {% include 'includes/icons.twig' %}
 </head>
-<body class="{{ page.backgroundClass }}">
+<body class="{{ page.backgroundClass }} {% block class %}{% endblock %}">
 
     {% block content %}
     {% endblock %}
